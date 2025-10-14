@@ -1,0 +1,38 @@
+Practical 10: DoS USING COLASOFT
+
+Aim : DoS using ColaSoft by flooding the destination with
+
+data packets.
+
+A Denial of Service (DoS) attack is a malicious attempt to disrupt normal
+network traffic by overwhelming a targeted system with traffic, making it
+unavailable to legitimate users. Essentially, the attacker floods the system
+with so much traffic that it can't handle the legitimate requests, causing the
+service to slow down or crash.
+Steps :
+Download Colasoft Packet Builder from the website :
+
+https://www.colasoft.com/download/products/download_p
+acket_builder.php
+
+In the above window click Add and select TCP packet.
+Find IP addresss
+Select destination ip address
+
+Click on Adapter
+Add one more packet click on add, to add packet. Select
+Arp packet and click on ok.
+
+Right click and select send all packets(the tcp packet ip). Give values for
+loop sending
+tick the 2 box: burst and loop and 1000 loops and .0001 milliseconds
+
+Select Microsoft adapter or keep default.
+Before clicking on start button, start wireshark capturing
+with filter : ip.addr==192.168.0.1 &&
+ip.addr==192.168.0.255 (enter respective addresses)
+
+Checking in wireshark
+
+(1000 packets from 192.168.0.1 to 192.168.0.255. Flooded the
+destination with continuous packets)

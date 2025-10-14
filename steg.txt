@@ -1,0 +1,73 @@
+Aim:
+To hide secret information inside an image using OpenStego and verify the hidden data
+using StegSolve.
+Software / Tools Required
+ OpenStego → To hide and extract data.
+ StegSolve → To analyze and confirm hidden data.
+ Java (JRE) → Required to run both tools.
+Steps to Perform the Practical
+Part A — Hiding Data Using OpenStego
+Step 1 — Open OpenStego
+ Launch OpenStego.
+ In the left panel, select Hide Data.
+Step 2 — Select the Files
+ Message File:
+Select the file you want to hide (e.g., secret.txt).
+ Cover File:
+Select the image where you want to hide your secret file (e.g., flower.png).
+ Output Stego File:
+Click Browse → Choose where to save the new stego image and give it a name (e.g.,
+flower_hidden.png).
+Step 3 — (Optional) Set a Password
+ If you want to encrypt your hidden file, enter a Password and Confirm Password.
+Step 4 — Hide the Data
+ Click Hide Data.
+ You’ll see a success message:
+“Data hidden successfully in the output file.”
+Step 5 — Output Screenshot
+
+Output of image saved in the folder:
+Here: Dice_hidden.png
+
+Part B — Extracting Hidden Data Using OpenStego
+Step 1 — Go to Extract Mode
+ In OpenStego, select Extract Data.
+Step 2 — Choose Files
+ Input Stego File: Select your generated stego image (flower_hidden.png).
+ Output Folder: Choose where to save the recovered file.
+ Enter your Password if you used one.
+Step 3 — Extract the Data
+ Click Extract Data.
+ If successful, you’ll get back your original secret.txt.
+Step 4 — Output Screenshot
+
+Part C — Analyzing the Image Using StegSolve
+Step 1 — Open StegSolve
+ Open Command Prompt in the folder where StegSolve-1.4.jar is saved.
+ Run:
+ java -jar StegSolve-1.4.jar
+ StegSolve will open.
+
+Step 2 — Load the Stego Image
+ Go to File → Open.
+ Select the stego image (e.g., flower_hidden.png).
+ Output of the image loaded in :
+
+Step 3 — Open Data Extract
+ Go to Analyse → Data Extract.
+Step 4 — Configure Settings
+ Under Bit Planes, select:
+o Red → 0
+o Green → 0
+o Blue → 0
+ Under Order Settings:
+o Extract By: Row
+o Bit Order: LSB First
+o Bit Plane Order: RGB
+Step 5 — Extract the Hidden Data
+ Click Preview → If hidden data exists, you’ll see it in the preview window.
+ Click Save Text or Save Bin to export the extracted data.
+Step 6 — Output Screenshot
+
+When clicked on Save Text &amp; Save bin. It is saved in the folder:
+Output:
