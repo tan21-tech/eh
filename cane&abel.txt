@@ -1,0 +1,17 @@
+Make a text file name: WordList.txt with text: 
+Hello World 
+hello123 
+password
+qwerty
+
+1. Open Cane & Abel
+2. Click on calci (the green button, mostly the 2nd option)
+3. When the hash calculator opens, select text to hash.
+4. And write Hello World.
+5. Below it Find the MD5 hash and copy it.
+6. then click on the plus sign in blue and a box will appear.
+7. Paste the MD5 hash.
+8. Click on the hash then right click on it and choose dictionary attack.
+9. In the menu add the WordList txt file.
+10. Then click Start, it should show 1 of 1 hashes cracked if not will show 0 of 1.
+11. It will show a key beside the hash code if it is cracked and if not will show a cross and blank

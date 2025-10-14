@@ -1,0 +1,39 @@
+1.	Download & Install Zenmap
+Zenmap is included with the Windows Nmap installer:
+1.	Visit the official site:
+🔗 https://nmap.org/download.html
+2.	Download the "Microsoft Windows Installer".
+3.	Run the installer — make sure the option for Zenmap GUI is selected.
+4.	After installation, you can find Zenmap in the Start Menu.
+
+2.	Launch Zenmap
+●	Click Start, search for Zenmap, and open it.
+●	You’ll see a simple GUI with these fields:
+○	Target – the IP address or domain you want to scan (ipv4)
+○	Profile – predefined scan options (e.g., "Intense scan")
+
+
+1] Target: ipv4; Perform the Basic Scan - Ping Scan: in profile with command: nmap -sn (ipv4)
+take ss for nmap output, ports/hosts, topology, scans.
+
+2] Target: ipv4; Perform the Basic Scan - Intense Scan: in profile with command:nmap -T4 -A scanme.nmap.org
+take ss for nmap output, ports/hosts, topology, scans.
+
+3] Set Target: www.google.com with command: nmap -sS www.google.com
+take ss for nmap output, ports/hosts, topology, scans.
+
+
+4] Set Target: scanme.nmap.org; Profile: Intense Scan, command: nmap -T4 -A -v scanme.nmap.org
+
+5]Set Target: www.google.com with command: nmap -sA www.google.com
+take ss for nmap output, ports/hosts, topology, scans.
+
+6] Set Target: www.google.com with command: nmap -sF www.google.com
+take ss for nmap output, ports/hosts, topology, scans.
+
+7] Set Target: www.google.com with command: nmap -sN www.google.com
+take ss for nmap output, ports/hosts, topology, scans.
+
+8] Set Target: www.google.com with command: nmap -sX www.google.com
+take ss for nmap output, ports/hosts, topology, scans.
+

@@ -1,0 +1,53 @@
+Aim: Use Wireshark (Sniffer) to capture network traffic and analyze and thus check vulnerability of network systems.
+
+1.Inspect traffic for a specific IP address.
+Filter : ip.addr==192.168.3.35 (any ipv4)
+
+2. Search: techpanda.com (on google) (then filter)
+http:
+ 
+4. http.referer contains " http://neverssl.com" (used this link but it changed into http://wholesoothinginnerday.neverssl.com/online/)
+ 
+5. Find out packets which are getting the response as PAGE NOT FOUND.
+URL used : http://info.cern.ch/authentication
+Filter : http.response.code==404
+
+6. Find out those packets which are getting responses.
+Filter : http.response.code==200
+ 
+7. Find Packets-: Browser Specific.
+Filter : http.user_agent contains Firefox
+Bowser Search: (Search in firefox only to get output) www.google.com and then http //jiofi.local.html
+
+8. Codes for server.py and client.py:
+
+server.py: 
+import socket
+
+s = socket.socket()
+print("Socket created successfully!")
+
+port=8080
+s.bind(('localhost'. port))
+print("Socket binded to %s" % port)
+
+while True:
+  c, addr = s.accept()
+  print("Got connection from", addr)
+  c.sendall('Thank you for connecting!'.encode())
+  c.close()
+
+
+client.py:
+import socket
+
+s=socket.socket()
+port=8080
+s.connect(('localhost',port))
+print(s.recv(1024).decode())
+
+1st run server.py, 2nd client.py in 2 different cmd.
+
+9.To sniff communication between client and server
+Filter :tcp.server==1
+

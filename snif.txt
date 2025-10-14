@@ -1,0 +1,34 @@
+Prep (before Cain):
+Install WinPcap or Npcap (required for packet capture).
+Run Cain & Abel as Administrator (right‑click → Run as admin).
+Make sure you’re on the same LAN as the targets (same subnet) and disable VPN if active.
+Use a lab network or get written permission before testing.
+
+Sniffing steps in Cain & Abel:
+Open Cain & Abel → go to the Sniffer tab (icon looks like a network plug).
+
+Click Configure (or Options) inside Sniffer and select the correct network adapter (the interface connected to the LAN).
+
+Click Start Sniffer (or the Start/Play button). Cain will begin listening on the selected adapter in promiscuous mode.
+
+Click Scan MAC Addresses (or press the Scan button) — Cain will populate a list of live hosts on the LAN (IP, MAC, hostname).
+
+To passively capture traffic: select a host or leave all hosts selected — Cain displays captured sessions in the lower pane (protocol, source, destination).
+
+To capture credentials from cleartext protocols (HTTP, FTP, POP3, IMAP, SMTP, SMB, etc.) Cain will show decoded logins automatically in the Passwords/Decoded Data area as traffic is observed.
+
+To actively intercept traffic (ARP poisoning / MITM) — use APR (ARP Poison Routing):
+
+Go to the APR tab.
+
+Click NetBIOS/ARP scan (or simply Scan).
+
+Select the target IP(s) (victim) and the gateway/router IP.
+
+Click Start APR (or Poison). Cain will ARP-poison the target(s) to redirect their traffic through your machine — you’ll then see more intercepted sessions.
+
+Monitor the Sniffer and Passwords panes for captured credentials and data.
+
+Export/save results: Right-click captured entries → Save/Export to export sessions or decoded passwords for reporting.
+
+When done, Stop APR (if used) and Stop Sniffer. Clear any poisoning and re-enable normal network operations.

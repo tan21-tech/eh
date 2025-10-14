@@ -1,0 +1,47 @@
+Open Cryptool
+click on file and new write "ATTACK ON GERMANY IS TODAY" for all k.
+
+Caesar (shift cipher)
+Write the text 
+go on encrypt and choose symmetric- Caesar
+Set Shift = 3 → Click encrypt
+Encrypt example: KHOOR ZRUOG
+Decrypt: set Shift = -3 
+
+Vigenère
+Write the text 
+go on encrypt and choose symmetric- Vigenère
+Enter the key: HELLO → Click encrypt
+Encrypt example: KHOOR ZRUOG
+Decrypt: set Shift = HELLO
+
+Playfair
+Write the text 
+Steps: Open Playfair → Keyword MONARCHY → using 5×5 key matrix → Encrypt
+Decrypt: MONARCHY
+
+DES (ECB)
+Write the text.
+go on encrypt and choose Asymmetric- DES (ECB)
+Decrypt: click on it
+
+AES (CBC)
+Write the text.
+go on encrypt and choose Asymmetric- AES (CBC)
+change the 00s: with the 4th pair with 01 & 4th last pair with 01.
+Decrypt: click on it
+
+RC4 (stream cipher)
+Write the text.
+go on encrypt and choose Asymmetric- AES (CBC)
+change the 00 to 01
+Decrypt: replace 00 to 01 and click on it
+
+Brute-force (exhaustive search)
+Write the text.
+Go on Analysis
+Click on symmetric encryption modern: choose RC4
+Click on Start.
+Click on Accept selection.
+
+

@@ -1,0 +1,11 @@
+Whois practical:
+
+1. pip install python-whois (on cmd)
+
+2.on idle write the code:
+import whois
+domain = whois.whois("domain name")
+print(domain)
+
+3. Do it for www.google.com, www.yahoo.co.in, https://who.is/
+(replace the domain name with these websites)

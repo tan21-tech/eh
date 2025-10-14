@@ -1,0 +1,95 @@
+IPCONFIG Commands
+ipconfig
+Output:
+
+ipconfig /flushdns
+Output:
+
+ipconfig /registerdns
+Output:
+
+ipconfig /release
+Output:
+
+ipconfig /renew
+Output:
+
+NETSTAT Commands
+netstat
+Output:
+
+netstat -a
+Output:
+
+netstat -s
+Output:
+
+netstat -r
+Output:
+
+netstat -i
+Output:
+
+netstat -f
+Output:
+
+PING Commands
+ping
+Output:
+
+ping -i
+Output:
+
+ping -s
+Output:
+
+ping -c
+Output:
+
+ping -w
+Output:
+
+TRACERT Commands
+tracert
+Output:
+
+tracert -h
+Output:
+
+tracert -w
+Output:
+
+tracert -4
+Output:
+
+tracert -d
+Output:
+
+ARP Commands
+arp
+Output:
+
+arp -a
+Output:
+
+arp -s
+Output:
+
+arp -d
+Output:
+
+arp -a -v
+Output:
+
+OTHER SYSTEM COMMANDS
+tasklist
+Output:
+
+systeminfo
+Output:
+
+gpupdate
+Output:
+
+chkdsk
+Output:

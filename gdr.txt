@@ -1,0 +1,116 @@
+GOOGLE DORKS and Reconnaissance (Paste the dork in google and paste the output k
+
+1. Display R programs in PDF format from Tutorialspoint
+Dork: filetype:pdf site:tutorialspoint.com r program
+Explanation: This finds only PDF files from Tutorialspoint that mention R programs.
+Output: PDFs related to R programming from Tutorialspoint.
+
+2. Display Facebook page of DCSIT
+Dork: site:facebook.com DCSIT
+Explanation: This shows Facebook pages with the name “DCSIT”.
+Output: DCSIT Facebook page or related results.
+
+3. Display all COVID-19 vaccination details
+Dork: intext:"Covid 19 vaccinations"
+Explanation: Finds web pages where the words “Covid 19 vaccinations” appear in the text.
+Output: Pages discussing COVID-19 vaccinations.
+
+4. Display all the websites from which we can access apple.com
+Dork: link:apple.com
+Explanation: Shows websites that have links pointing to apple.com.
+Output: Pages linking to Apple’s website.
+
+5. Display Instagram pages related to Food channels
+Dork: site:Instagram.com food
+Explanation: Searches Instagram pages or posts related to food.
+Output: Food-related Instagram profiles or pages.
+
+6. Display all PDF files from NASA website
+Dork: filetype:pdf site:nasa.gov
+Explanation: Finds PDF documents on NASA’s official site.
+Output: NASA PDF files.
+
+7. Display all text containing “new education policy”
+Dork: allintext:"new education policy"
+Explanation: Finds pages where the entire phrase “new education policy” is in the text.
+Output: Articles or documents about the new education policy.
+
+8. Weather in Australia
+Dork: weather:Australia
+Explanation: Directly shows the weather forecast for Australia.
+Output: Current weather in Australia.
+
+9. Display all pages containing “@copyright”
+Dork: allintext:@copyright
+Explanation: Finds pages that have the word "@copyright" in their text.
+Output: Copyright-related pages.
+
+10. Display “security plans” in Indian government websites
+Dork: intext:"security plans" inurl:gov.in
+Explanation: Shows Indian government sites (.gov.in) that mention “security plans”.
+Output: Security plans from official Indian sites.
+
+11. Display all info on Mumbai cycling marathon 2023
+Dork: allintext:Mumbai cycling marathon 2023 site:
+Explanation: Shows pages with this event mentioned. (Add a site name if needed.)
+Output: Information about the Mumbai cycling marathon 2023.
+
+12. Display pages with Python TypeError
+Dork: error:TypeError python
+Explanation: Shows Python error pages for TypeError.
+Output: Help or code examples about Python TypeError.
+
+13. Display Gujarat to Mumbai route details
+Dork: allintext:gujurat to Mumbai routes
+Explanation: Finds web pages that talk about routes from Gujarat to Mumbai.
+Output: Travel or transport info for Gujarat to Mumbai.
+
+14. Display Facebook connection pages
+Dork: allintitle:connect to @facebook
+Explanation: Shows pages where the title includes "connect to @facebook".
+Output: Pages related to Facebook connection.
+
+15. Display PDF documents on Bitcoin
+Dork: intext:bitcoin filetype:pdf
+Explanation: Finds PDF files that contain the word “bitcoin”.
+Output: Bitcoin-related PDFs.
+
+16. Display today’s Maharashtra pandemic report
+Dork: allintext:Maharashtra Pandemic report of today
+Explanation: Finds pages with today’s pandemic report in Maharashtra.
+Output: Current pandemic reports from Maharashtra.
+
+17. Display video of Modiji’s Yoga Day celebration
+Dork: video:Modiji yoga day
+Explanation: Shows videos related to PM Modi and Yoga Day.
+Output: Yoga Day videos featuring Modiji.
+
+18. Display ATKT timetable on Ruiacollege.edu
+Dork: allintext:ATKT timetable site:ruiacollege.edu
+Explanation: Finds pages on Ruiacollege’s site with ATKT timetable info.
+Output: ATKT exam schedule.
+
+19. Display Mumbai weather reports
+Dork: intitle:weather Mumbai
+Explanation: Finds pages with “weather Mumbai” in their titles.
+Output: Mumbai weather updates.
+
+20. Display PDF files on cyber security
+Dork: filetype:pdf allintext:cyber security
+Explanation: Finds PDF documents that talk about cyber security.
+Output: Cyber security PDFs.
+
+21. Information about www.telegram.com
+Dork: info:www.telegram.com
+Explanation: Shows Google info and quick links about the Telegram website.
+Output: Info and cached data for telegram.com.
+
+22. Display Ruiacollege admissions in 2012
+Dork: allintext:admissions 2012 site:ruiacollege.edu
+Explanation: Finds pages on Ruiacollege’s website mentioning admissions for 2012.
+Output: Admission info from 2012 on Ruiacollege.edu.
+
+23. Display the definition of hacking
+Dork: define:hacking
+Explanation: This dork is used to find the dictionary definition of a word. In this case, it shows the meaning of "hacking" directly in search results.
+Output: The definition of hacking (e.g., unauthorized access to computer systems).

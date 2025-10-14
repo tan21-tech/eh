@@ -1,0 +1,27 @@
+Install Hashcat: download from hashcat.net, extract to C:\hashcat\.
+
+Install GPU drivers: update NVIDIA/AMD/Intel drivers for GPU acceleration.
+
+Create hash.txt: contains only the hash (single line), e.g. 4d0337f9e8a9f24300e84b80e4513702.
+
+Create wordlist.txt: one password candidate per line, e.g.
+
+password
+password123
+123456
+qwerty
+
+
+Open CMD in folder: in File Explorer path bar type cmd (opens CMD at C:\hashcat\).
+
+MD5 dictionary command: hashcat.exe -m 0 -a 0 hash.txt wordlist.txt.
+
+SHA256 dictionary command: hashcat.exe -m 1400 -a 0 hash.txt wordlist.txt.
+
+Use rules (best64): hashcat.exe -m 0 -a 0 -r rules/best64.rule hash.txt wordlist.txt.
+
+If wordlist exhausted: use bigger lists, rules, or brute-force (change -a); example brute-force (lowercase letters length 1-6): hashcat.exe -m 0 -a 3 hash.txt ?l?l?l?l?l?l.
+
+Check result: cracked line appears as hash:password and Status: Cracked.
+
+Ethics: only test hashes you own or have permission to test.
