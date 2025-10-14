@@ -114,3 +114,17 @@ Output: Admission info from 2012 on Ruiacollege.edu.
 Dork: define:hacking
 Explanation: This dork is used to find the dictionary definition of a word. In this case, it shows the meaning of "hacking" directly in search results.
 Output: The definition of hacking (e.g., unauthorized access to computer systems).
+
+
+-------------------
+Whois practical:
+-------------------
+1. pip install python-whois (on cmd)
+
+2.on idle write the code:
+import whois
+domain = whois.whois("domain name")
+print(domain)
+
+3. Do it for www.google.com, www.yahoo.co.in, https://who.is/
+(replace the domain name with these websites)
