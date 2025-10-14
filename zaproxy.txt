@@ -1,0 +1,11 @@
+Praactical 11: Vulnerability Scanning
+Tool used ZAPROXY
+Target Website: http://testphp.vulweb.com/ (Search n google)
+1] Below File: choose ATTACK Mode from the dropdown.
+2] Then Automated Scan screen will open.
+3] URL to attack:http://testphp.vulweb.com/
+4] Use a traditional spider tick the box.
+5] Use ajax spider: if modern with firefox (choose from the dropdown)
+6] Click on the button attack.
+7] Below history, earch, alerts, output, active scan, spider and ajax spider tabs will open.
+8]Take outputs of every tab
