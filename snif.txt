@@ -1,34 +1,62 @@
-Prep (before Cain):
-Install WinPcap or Npcap (required for packet capture).
-Run Cain & Abel as Administrator (right‑click → Run as admin).
-Make sure you’re on the same LAN as the targets (same subnet) and disable VPN if active.
-Use a lab network or get written permission before testing.
+NETWORK SNIFFING WITH
+CAIN AND ABEL TOOL
 
-Sniffing steps in Cain & Abel:
-Open Cain & Abel → go to the Sniffer tab (icon looks like a network plug).
+Before downloading and installing Cain & abel tool, it is
+advised to turn off the Windows firewall and anti-virus tool.
+The network sniffing can be performed with Cain and abel
+tool with following steps:
+Step 1: Search for Cain & Abel in a searching engine and
+download the tool as shown in Figure 3 and Figure 4
+respectively.
 
-Click Configure (or Options) inside Sniffer and select the correct network adapter (the interface connected to the LAN).
+Step 2: Download WinPcap for Windows operating system.
+Figure 5 shows WinPcap for Windows 10 operating system
+and Figure 6 shows WinPcap for rest of the versions of
+Windows operating system.
 
-Click Start Sniffer (or the Start/Play button). Cain will begin listening on the selected adapter in promiscuous mode.
+Figure 6: Download WinPcap for Windows NT/XP/..../Win8 operating system
 
-Click Scan MAC Addresses (or press the Scan button) — Cain will populate a list of live hosts on the LAN (IP, MAC, hostname).
+Step 3: Figure 7 shows icon of Cain & Abel tool on Desktop of
+Windows operating system after installation.
 
-To passively capture traffic: select a host or leave all hosts selected — Cain displays captured sessions in the lower pane (protocol, source, destination).
+Step 4: Double click on this icon to open Cain & Abel tool as
+shown in Figure 8.
 
-To capture credentials from cleartext protocols (HTTP, FTP, POP3, IMAP, SMTP, SMB, etc.) Cain will show decoded logins automatically in the Passwords/Decoded Data area as traffic is observed.
+Step 5: Click the sniffer tab and press “configure” to open
+configuration dialog. Select an adapter from the
+configuration dialog box and click “ok” as shown in Figure 9.
 
-To actively intercept traffic (ARP poisoning / MITM) — use APR (ARP Poison Routing):
+Step 6: Turn on the sniffer and click the “+”icon to select all
+host in the subnet or give a range of IP address. Click “ok” as
+shown in Figure 10.
 
-Go to the APR tab.
+Step 7: Select the IP address of target host (172.16.55.9)
+from the list of hosts as shown in Figure 11.
 
-Click NetBIOS/ARP scan (or simply Scan).
+Step 8: Select APR tab and perform ARP route poisoning to
+poison the route and sniff the network packets. Select the IP
+address of router on left side of the table and IP address of
+the target host (or we can select all IP addresses) on the right
+side of the table as shown in Figure 12 and Figure 13
+respectively.
 
-Select the target IP(s) (victim) and the gateway/router IP.
+Step 9: As shown in Figure 14, the IP address of the target
+host (172.16.55.9) is displayed with the IP address of the
+router (172.16.0.1)
 
-Click Start APR (or Poison). Cain will ARP-poison the target(s) to redirect their traffic through your machine — you’ll then see more intercepted sessions.
+Step 10: Now open an HTTP website on the target host
+machine (172.16.55.9) and create an account on that website
+as shown in Figure 15 and Figure 16 respectively.
 
-Monitor the Sniffer and Passwords panes for captured credentials and data.
+Step 11: Now start poisoning the route to sniff the network
+packets by clicking the APR icon and the status will be
+changed from “Idle” to “Poisoning” as shown in Figure 17
+and Figure 18 respectively.
 
-Export/save results: Right-click captured entries → Save/Export to export sessions or decoded passwords for reporting.
+Step 12: Select “HTTP” tab to check the username, password,
+and URL captured after sniffing the network as shown in
+Figure 19 and Figure 20 respectively.
 
-When done, Stop APR (if used) and Stop Sniffer. Clear any poisoning and re-enable normal network operations.
+Step 13: Now login the website with captured username and
+password on your host machine as shown in Figure 21 and
+Figure 22 respectively. (hackforums.net/index.php
