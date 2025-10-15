@@ -1,0 +1,77 @@
+attrib +h +s secret.txt 
+Rename secret.exe to secret.txt 
+ Rename photo.jpg to photo.txt.exe
+
+:: Create files 
+echo echo Hello > secret.bat 
+echo dummy data > photo.jpg 
+:: Rename files to disguise 
+ren secret.bat secret.txt 
+ren photo.jpg photo.txt.exe
+
+
+
+What is a Hidden File?
+● A file marked with special attributes so it’s not shown by default in File
+Explorer.
+● Helps keep files out of casual view.
+● Windows uses two main attributes: Hidden & System.
+Hide a File Using Command Prompt
+attrib +h +s secret.txt
++h adds Hidden attribute
++s adds System attribute
+
+Show Hidden Files
+● Open File Explorer → View → Options → View tab
+● Select Show hidden files, folders, and drives
+● Uncheck Hide protected operating system files
+
+Alternate Data Streams (ADS)
+● NTFS feature to hide data inside files.
+● Example:
+notepad normal.txt:hidden.txt
+
+“Stealthy” = Hard to detect without knowing exactly what to look for.
+These methods exploit default system behaviors and settings to keep files hidden
+from everyday view and casual inspection.
+
+Rename the File to Disguise Its Type
+● Change the file extension to something else.
+● Examples:
+○ Rename secret.exe to secret.txt
+
+○ Rename photo.jpg to photo.txt.exe
+
+If extensions are hidden, users will see:
+● secret.txt instead of secret.exe
+
+● photo.txt instead of photo.txt.exe
+
+This can trick users into thinking a file is harmless when it’s actually
+executable or something else.
+
+Create a File With Double Extensions (Classic Trick)
+● Rename a file to have two extensions, like:
+report.pdf.exe
+If extensions are hidden, this looks like report.pdf — users might think it’s a PDF but it’s
+actually an executable.
+
+Hiding Files Using File Extension Tricks
+What Are File Extensions?
+● File extensions tell Windows what type of file it is.
+
+● Example: .txt for text files, .exe for executables.
+Default Behavior of Windows Explorer
+● By default, Windows hides known file extensions.
+● This can make files look different than they really are.
+● Open File Explorer.
+● Go to the View tab.
+● Check/uncheck File name extensions.
+
+:: Create files
+echo echo Hello > secret.bat
+echo dummy data > photo.jpg
+
+:: Rename files to disguise
+ren secret.bat secret.txt
+ren photo.jpg photo.txt.exe
